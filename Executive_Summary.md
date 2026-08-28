@@ -33,23 +33,17 @@ Across 10,000 analyzed guest interactions, the platform captured key performance
 
 ---
 
-## Challenge-to-Dashboard Visual Mapping
+# Challenge-to-Dashboard Visual Mapping
 
-The **SeaSmart AI Executive Dashboard** is structured to map backend analytical signals directly to guest service challenges. The table below illustrates how specific operational pain points map to dashboard elements, metrics, and actionable decisions:
+The **SeaSmart AI Executive Dashboard** is structured to map backend analytical signals directly to guest service challenges. The table below illustrates how specific operational pain points map to dashboard elements, metrics, and actionable decisions.
 
-| Operational Challenge / Pain Point | Dashboard Visual Element | Target Metric / Calculated Expression | Operational Status & Finding | Strategic Action Triggered |
-| --- | --- | --- | --- | --- |
-| **High Contact Center Overhead:** Excessive routine guest inquiries driving up support costs. | **Chart 1: Total AI Sessions** & **Chart 3: Total Cost Savings** | `SUM(total_sessions)`<br>
-
-<br>`SUM(total_cost_savings_usd)` | **10,000 Sessions**<br>
-
-<br>**$33,888.72 Saved** | Quantifies labor offset ($8.50 agent call vs. $0.12 AI query) to validate AI ROI. |
-| **Low Self-Service Resolution:** Guests escalating to human agents before completing their requests. | **Chart 2: Containment Rate Scorecard** | `SUM(contained_sessions) / SUM(total_sessions)` | **40.4% Containment** *(Status: Red Alert < 60%)* | Flags systemic self-service friction; initiates cross-functional triage for dialog trees. |
-| **Guest Frustration & Negative Bias:** Unresolved queries causing guest dissatisfaction. | **Chart 4: Average Guest Sentiment** | `AVG(sentiment_score)` | **-0.02 Net Sentiment** *(Status: Red Alert ≤ 0.00)* | Triggers sentiment threshold alerts and pinpoints intent drop-off points. |
-| **Domain Bottlenecks & Intent Drop-off:** Identifying which specific query types fail most frequently. | **Chart 5: Intent Performance (Containment vs. Escalation)** | `AVG(containment_rate_pct)` vs.<br>
-
-<br>`AVG(escalation_rate_pct)` sorted by intent | **WiFi Troubleshooting** flagged as primary failure mode | Prioritizes engineering resources to rewrite *WiFi_Troubleshooting* fallback logic. |
-| **Channel-Specific Degradation:** Determining whether issues stem from mobile, web, or in-cabin channels. | **Global Channel Filter Dropdown** | Interactive Filter: `channel` | Channel-level isolation (`Mobile_App_Hub`, `Web_Portal`, `In_Cabin_TV`) | Allows channel owners to debug platform-specific UX failures independently. |
+| **Operational Challenge / Pain Point**                                                                    | **Dashboard Visual Element**                                     | **Target Metric / Calculated Expression**                                          | **Operational Status & Finding**                                        | **Strategic Action Triggered**                                                            |
+| --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| **High Contact Center Overhead:** Excessive routine guest inquiries driving up support costs.             | **Chart 1: Total AI Sessions** & **Chart 3: Total Cost Savings** | `SUM(total_sessions)`<br><br>`SUM(total_cost_savings_usd)`                         | **10,000 Sessions**<br><br>**$33,888.72 Saved**                         | Quantifies labor offset ($8.50 agent call vs. $0.12 AI query) to validate AI ROI.         |
+| **Low Self-Service Resolution:** Guests escalating to human agents before completing their requests.      | **Chart 2: Containment Rate Scorecard**                          | `SUM(contained_sessions) / SUM(total_sessions)`                                    | **40.4% Containment**<br>*Status: Red Alert < 60%*                      | Flags systemic self-service friction; initiates cross-functional triage for dialog trees. |
+| **Guest Frustration & Negative Bias:** Unresolved queries causing guest dissatisfaction.                  | **Chart 4: Average Guest Sentiment**                             | `AVG(sentiment_score)`                                                             | **-0.02 Net Sentiment**<br>*Status: Red Alert ≤ 0.00*                   | Triggers sentiment threshold alerts and pinpoints intent drop-off points.                 |
+| **Domain Bottlenecks & Intent Drop-off:** Identifying which specific query types fail most frequently.    | **Chart 5: Intent Performance (Containment vs. Escalation)**     | `AVG(containment_rate_pct)` vs. `AVG(escalation_rate_pct)`<br><br>Sorted by intent | **WiFi Troubleshooting** flagged as primary failure mode                | Prioritizes engineering resources to rewrite *WiFi_Troubleshooting* fallback logic.       |
+| **Channel-Specific Degradation:** Determining whether issues stem from mobile, web, or in-cabin channels. | **Global Channel Filter Dropdown**                               | Interactive Filter: `channel`                                                      | Channel-level isolation (`Mobile_App_Hub`, `Web_Portal`, `In_Cabin_TV`) | Allows channel owners to debug platform-specific UX failures independently.               |
 
 ---
 
