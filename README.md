@@ -18,11 +18,12 @@ This repository contains the complete analytics infrastructure built to measure,
 |  • Synthetic Log Data  |  • SQL Cleaning & Normalization    |  • GitHub Repository              |
 +------------------------+------------------------------------+-----------------------------------+
 ```
-1. **Data Generation:** scripts/synthetic_data_generator.py creates 10,000 interaction logs and 2,000 A/B prompt experiment records.
+---
+1. **Data Generation:** `scripts/synthetic_data_generator.py` creates 10,000 interaction logs and 2,000 A/B prompt experiment records.
 
-2. **Data Warehousing & SQL ETL:** Scripts in sql/ perform cleaning, normalization, and aggregation in BigQuery (driiiportfolio.consumer_ai_analytics).
+2. **Data Warehousing & SQL ETL:** Scripts in sql/ perform cleaning, normalization, and aggregation in BigQuery (`driiiportfolio.consumer_ai_analytics`).
 
-3. **Statistical Modeling:** scripts/statistical_ab_testing_analysis.py evaluates prompt efficacy using Z-tests for proportions.
+3. **Statistical Modeling:** `scripts/statistical_ab_testing_analysis.py` evaluates prompt efficacy using Z-tests for proportions.
 
 4. **Executive Dashboarding:** Dynamic Looker Studio dashboard connected to BigQuery analytical views.
 
