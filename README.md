@@ -1,8 +1,8 @@
 # Carnival Consumer AI Analytics & Insights Platform
 
 [![BigQuery](https://img.shields.io/badge/Google_BigQuery-Free_Tier-blue)](https://cloud.google.com/bigquery)
-[![Looker Studio](https://img.shields.io/badge/Looker_Studio-Executive_Dashboard-orange)](https://lookerstudio.google.com)
-[![Python](https://img.shields.io/badge/Python-Colab_A%2FB_Testing-green)](https://colab.research.google.com)
+[![Looker Studio](https://img.shields.io/badge/Looker_Studio-Executive_Dashboard-white)](https://datastudio.google.com/u/0/reporting/739fe4cd-1267-4809-bd58-6465aed35095/page/nBa7F)
+[![Python](https://img.shields.io/badge/Python-Colab_A%2FB_Testing-red)](https://colab.research.google.com)
 
 ## Repository Overview
 This repository contains the complete analytics infrastructure built to measure, analyze, and optimize Consumer AI initiatives for Carnival Cruise Line. The platform bridges raw conversational logs with executive scorecards, statistical hypothesis testing, and value realization modeling for the **SeaSmart AI Guest Assistant**.
